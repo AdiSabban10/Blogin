@@ -1,0 +1,37 @@
+.main-layout {
+    display: grid;
+    grid-template-columns:
+        minmax(40px, 1fr) 
+        minmax(auto, 980px) 
+        minmax(40px, 1fr);
+    
+}
+
+.main-layout > *:not(.full) {
+    grid-column: 2;
+}
+  
+.main-layout > *.full {
+    grid-column: 1 / -1;
+}
+
+/* CARDS LAYOUT */
+
+.cards-layout {
+    display: grid;
+    grid-template-columns: 1fr 40px 1fr;
+    margin-bottom: 80px;
+  }
+  
+  .cards-layout:first-child {
+    margin-top: 80px;
+  }
+  
+  .cards-layout > *:first-child {
+    grid-column: 1;
+  }
+
+  .cards-layout > *:last-child {
+    grid-column: 3;
+  }
+  

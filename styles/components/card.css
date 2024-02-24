@@ -1,0 +1,25 @@
+.card .card-button {
+    padding: 0.75em;
+    background-color: var(--primary--4);
+    color: var(--primary--1);
+    border: 2px solid var(--primary--1);
+    border-radius: 1.5em;
+    font-family: lato-bold, serif;
+    min-width: 184px;
+}
+
+.card .card-button:hover {
+    color: var(--active-1);
+    border-color: var(--active-1);
+    cursor: pointer;
+}
+
+.card .card-button .arrow {
+    padding-inline-start: 10px;
+    color: var(--primary-2);
+}
+
+.card .card-button .hidden {
+    display: none;
+}
+

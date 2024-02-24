@@ -1,0 +1,22 @@
+.main-content {
+    border: 1px solid var(--primary--2);
+    border-collapse: collapse;
+    margin-inline-end: 25px;
+}
+
+.main-content .switch-pages {
+    padding: 30px;
+    border-top: 1px solid var(--primary--2);
+}
+
+.main-content button {
+    text-transform: uppercase;
+    border: 0;
+    background-color: var(--primary--4);
+    color: var(--primary-base);
+    font-family: lato-bold, serif;
+}
+
+.main-content button:hover {
+    cursor: pointer;
+}
