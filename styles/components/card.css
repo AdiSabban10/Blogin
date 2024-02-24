@@ -1,3 +1,9 @@
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .card .card-button {
     padding: 0.75em;
     background-color: var(--primary--4);
@@ -5,7 +11,7 @@
     border: 2px solid var(--primary--1);
     border-radius: 1.5em;
     font-family: lato-bold, serif;
-    min-width: 184px;
+    max-width: 184px;
 }
 
 .card .card-button:hover {
