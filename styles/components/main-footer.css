@@ -16,7 +16,7 @@
 }
 
 .main-footer .footer-rights a {
-    font-family: lato-bold, serif;
+    font-family: lato-bold, sans-serif;
     color: var(--primary-base);
     text-decoration: none;
 }
