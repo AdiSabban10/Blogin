@@ -92,11 +92,14 @@
 
     <script>
         function toggleMenu() {
-            document.body.classList.toggle('menu-open');
-
+            document.body.classList.toggle('menu-open')
+            
             var elBtn = document.querySelector('.toggle-menu-btn')
-            if (elBtn.innerText === '☰') elBtn.innerText = 'X'
-            else elBtn.innerText === '☰'
+            if (elBtn.innerText === '☰') {
+                elBtn.innerText = 'X'
+            } else {
+                elBtn.innerText = '☰'
+            }
         }
     </script>
 </body>
