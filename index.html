@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body class="main-layout">
+
+    <div class="main-screen" onclick="toggleMenu()"></div>
+
     <header class="main-header full main-layout">
         <div class="flex space-between align-center">
             <div class="logo">Blogin<span>.</span></div>
@@ -19,6 +22,7 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
+            <button class="toggle-menu-btn" type="button" onclick="toggleMenu()">☰</button>
         </div>
     </header>
 
@@ -42,10 +46,12 @@
             <div>
                 <img class="card-image" src="images/002.jpg" alt="">
             </div>
-            <div>
+            <div class="card-content">
                 <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
-                <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                <div>
+                    <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                </div>
                 <button class="card-button">Continue Reading<span class="arrow"> → </span></button>
             </div>
         </div>
@@ -54,10 +60,12 @@
             <div>
                 <img class="card-image" src="images/003.jpg" alt="">
             </div>
-            <div>
+            <div class="card-content">
                 <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
-                <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                <div>
+                    <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                </div>
                 <button class="card-button">Continue Reading<span class="arrow hidden"> → </span></button>
             </div>
         </div>
@@ -81,7 +89,13 @@
             <li><a href=""><i class="fa-solid fa-basketball"></i></a></li>
         </ul>
     </footer>
-    
-    
+
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open');
+
+            // document.querySelector('.toggle-menu-btn').innerText = 'X'
+        }
+    </script>
 </body>
 </html>

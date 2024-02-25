@@ -6,20 +6,16 @@
 .main-header .main-nav-list a {
     text-decoration: none;
     color: var(--primary--4);
-    font-family: lato-bold, serif;
+    font-family: lato-bold, sans-serif;
 }
 
 .main-header .main-nav-list a:hover {
     color: var(--active-1);
 }
-  
-.main-header .main-nav-list > * {
-    margin-inline: 40px;
-}
 
 .logo {
     color: var(--primary--4);
-    font-family: eurofurence, monospace;
+    font-family: eurofurence, sans-serif;
     font-size: 1.875em;
 }
 
