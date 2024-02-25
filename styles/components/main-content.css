@@ -13,7 +13,7 @@
     border: 0;
     background-color: var(--primary--4);
     color: var(--primary-base);
-    font-family: lato-bold, serif;
+    font-family: lato-bold, sans-serif;
 }
 
 .main-content button:hover {
